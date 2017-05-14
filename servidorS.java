@@ -14,7 +14,7 @@ public class servidorS {
 		Socket socket = serverSocket.accept();
 		//Flujo de datos hacia al cliente
 		DataOutputStream salidaCliente = new DataOutputStream(socket.getOutputStream());// flujo para poder mandar un string
-		BufferedReader entrada = new BufferedReader(new InputStreamReader(socket.getInputStream())); // flujo para poder leer del socket un string, con el método readline()
+		BufferedReader entrada = new BufferedReader(new InputStreamReader(socket.getInputStream())); // flujo para poder leer del socket un string, con el mÃ©todo readline()
 		String mensajeServidor;
 		String  a;
 		int i;
@@ -25,8 +25,8 @@ public class servidorS {
 			salidaCliente.writeUTF(a);////reenvia el mensaje en letras mayusculas
 		}
 		//salidaCliente.writeUTF(a);//envia a al cliente
-		System.out.println("Fin de la conexión");
-		//Se finaliza la conexión con el cliente
+		System.out.println("Fin de la conexiÃ³n");
+		//Se finaliza la conexiÃ³n con el cliente
 
 		socket.close();
 		serverSocket.close();
@@ -34,3 +34,4 @@ public class servidorS {
 
 	}
 }
+
